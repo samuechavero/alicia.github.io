@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Alicia Rosales Tarot"
+description = "Landing page for Alicia Rosales, a tarot reader based in Córdoba, Argentina, with an interactive tarot spread, WhatsApp contact, service details, FAQs, and clear legal notices."
+version = "1.0.0"
+id = "artifacts/alicia-tarot"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 25070
+
+[services.development]
+run = "pnpm --filter @workspace/alicia-tarot run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/alicia-tarot", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/alicia-tarot/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "25070"
+BASE_PATH = "/"
