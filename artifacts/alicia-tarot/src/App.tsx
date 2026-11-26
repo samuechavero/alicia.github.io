@@ -201,9 +201,10 @@ function App() {
                 id="cta-mobile-menu-whatsapp"
                 location="mobile-menu"
                 message={siteData.defaultHeroMessage}
-                className="flex w-full items-center justify-center gap-2 rounded-full bg-[#25D366] px-5 py-3 text-xs font-bold text-[#102017]"
+                className="inline-flex w-full items-center justify-center gap-2.5 px-6 py-3.5 rounded-full bg-[#25D366] text-xs font-semibold leading-none text-[#102017] transition hover:bg-[#1EBE5D]"
               >
-                <MessageCircle size={15} /> Lectura Gratis
+                <MessageCircle size={16} className="shrink-0 block align-middle" />
+                <span className="leading-none">Lectura Gratis</span>
               </ContactLink>
             </div>
           </nav>
@@ -231,17 +232,17 @@ function App() {
                 id="cta-hero-whatsapp"
                 location="hero"
                 message={siteData.defaultHeroMessage}
-                className="inline-flex min-h-[54px] items-center justify-center gap-3 rounded-full bg-[#25D366] px-8 text-sm font-bold uppercase tracking-wider text-[#102017] shadow-[0_8px_30px_rgba(37,211,102,.25)] transition hover:bg-[#1EBE5D] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#73c79b]"
+                className="inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full bg-[#25D366] text-sm font-semibold uppercase tracking-wider text-[#102017] leading-none shadow-[0_8px_30px_rgba(37,211,102,.25)] transition hover:bg-[#1EBE5D] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#73c79b]"
               >
-                <MessageCircle size={18} />
-                QUIERO MI LECTURA DE TAROT GRATIS
+                <MessageCircle size={18} className="shrink-0 block align-middle" />
+                <span className="leading-none">QUIERO MI LECTURA DE TAROT GRATIS</span>
               </ContactLink>
               <a
                 href="#lectura"
-                className="inline-flex min-h-[50px] items-center justify-center gap-2 rounded-full border border-[#bfa66f]/50 px-6 text-sm font-medium text-[#e8d7a7] transition hover:bg-[#bfa66f]/15"
+                className="inline-flex items-center justify-center gap-2 rounded-full border border-[#bfa66f]/50 px-6 py-3.5 text-sm font-medium leading-none text-[#e8d7a7] transition hover:bg-[#bfa66f]/15"
               >
-                <Sparkles size={16} />
-                Elegir una carta
+                <Sparkles size={16} className="shrink-0 block align-middle" />
+                <span className="leading-none">Elegir una carta</span>
               </a>
             </div>
 
@@ -389,16 +390,19 @@ function App() {
                       id="cta-spread-whatsapp"
                       location="lectura-cartas"
                       message={cardMessage}
-                      className="inline-flex min-h-[46px] items-center justify-center gap-2 rounded-full bg-[#25D366] px-6 text-xs font-bold text-[#102017] transition hover:bg-[#1EBE5D]"
+                      className="inline-flex items-center justify-center gap-2.5 px-6 py-3 rounded-full bg-[#25D366] text-xs font-semibold leading-none text-[#102017] transition hover:bg-[#1EBE5D]"
                     >
-                      <MessageCircle size={15} /> Conversar sobre esta carta por WhatsApp <ArrowRight size={14} />
+                      <MessageCircle size={16} className="shrink-0 block align-middle" />
+                      <span className="leading-none">Conversar sobre esta carta por WhatsApp</span>
+                      <ArrowRight size={14} className="shrink-0 block align-middle" />
                     </ContactLink>
                     <button
                       type="button"
                       onClick={() => setSelectedCardIndex(null)}
-                      className="inline-flex items-center gap-2 rounded-full border border-[#7a6b82]/60 px-5 py-2.5 text-xs text-[#c9bdce] transition hover:border-[#bfa66e]"
+                      className="inline-flex items-center justify-center gap-2 rounded-full border border-[#7a6b82]/60 px-5 py-3 text-xs leading-none text-[#c9bdce] transition hover:border-[#bfa66e]"
                     >
-                      <RotateCcw size={13} /> Elegir otra carta
+                      <RotateCcw size={13} className="shrink-0 block align-middle" />
+                      <span className="leading-none">Elegir otra carta</span>
                     </button>
                   </div>
                 </motion.div>
@@ -452,9 +456,11 @@ function App() {
               id="cta-vinculos-whatsapp"
               location="vinculos-emociones"
               message={siteData.vinculosMessage}
-              className="inline-flex min-h-[50px] items-center justify-center gap-2.5 rounded-full bg-[#25D366] px-7 text-xs font-bold uppercase tracking-wider text-[#102017] transition hover:bg-[#1EBE5D] shadow-[0_8px_25px_rgba(37,211,102,.2)]"
+              className="inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-full bg-[#25D366] text-xs font-semibold uppercase tracking-wider leading-none text-[#102017] transition hover:bg-[#1EBE5D] shadow-[0_8px_25px_rgba(37,211,102,.2)]"
             >
-              <MessageCircle size={16} /> Contame tu situación <ArrowRight size={15} />
+              <MessageCircle size={16} className="shrink-0 block align-middle" />
+              <span className="leading-none">Contame tu situación</span>
+              <ArrowRight size={15} className="shrink-0 block align-middle" />
             </ContactLink>
           </div>
         </div>
@@ -480,7 +486,7 @@ function App() {
               <article
                 key={service.id}
                 data-testid={`card-service-${service.id}`}
-                className={`relative flex min-h-[350px] flex-col overflow-hidden rounded-2xl border p-7 sm:p-8 transition hover:-translate-y-1 ${
+                className={`relative flex flex-col h-full overflow-hidden rounded-2xl border p-7 sm:p-8 transition hover:-translate-y-1 ${
                   i === 0
                     ? 'border-[#d4bf83]/70 bg-[#281545] shadow-[0_8px_30px_rgba(212,191,131,.1)]'
                     : 'border-[#52465e]/70 bg-[#1b102d]'
@@ -501,18 +507,24 @@ function App() {
                 <p className="mt-3 text-sm leading-6 text-[#bdb2c4]">
                   {service.description}
                 </p>
-                <p className="mt-4 border-t border-white/10 pt-3 text-[11px] text-[#d2c08e]">
-                  {service.detail}
-                </p>
 
-                <ContactLink
-                  id={`cta-service-${service.id}-whatsapp`}
-                  location={`servicio-${service.id}`}
-                  message={service.message}
-                  className="mt-auto pt-6 inline-flex min-h-[44px] items-center justify-center gap-2 self-start rounded-full bg-[#25D366] px-5 text-xs font-bold text-[#102017] transition hover:bg-[#1EBE5D]"
-                >
-                  <MessageCircle size={15} /> Consultar por este caso <ArrowRight size={14} />
-                </ContactLink>
+                {/* Bloque inferior agrupado con mt-auto para alinear todos los botones a la misma altura */}
+                <div className="mt-auto pt-5 flex flex-col gap-4">
+                  <p className="border-t border-white/10 pt-3 text-[11px] text-[#d2c08e]">
+                    {service.detail}
+                  </p>
+
+                  <ContactLink
+                    id={`cta-service-${service.id}-whatsapp`}
+                    location={`servicio-${service.id}`}
+                    message={service.message}
+                    className="inline-flex w-full items-center justify-center gap-2.5 px-6 py-3.5 rounded-full bg-[#25D366] text-xs font-semibold leading-none text-[#102017] transition hover:bg-[#1EBE5D] shadow-sm"
+                  >
+                    <MessageCircle size={16} className="shrink-0 block align-middle" />
+                    <span className="leading-none">Consultar por este caso</span>
+                    <ArrowRight size={14} className="shrink-0 block align-middle" />
+                  </ContactLink>
+                </div>
               </article>
             ))}
           </div>
@@ -616,9 +628,11 @@ function App() {
               id="cta-process-whatsapp"
               location="proceso"
               message={siteData.processMessage}
-              className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-full border border-[#25D366] px-7 text-xs font-semibold text-[#8de0aa] transition hover:bg-[#25D366]/15"
+              className="inline-flex items-center justify-center gap-2.5 rounded-full border border-[#25D366] px-7 py-3 text-xs font-semibold leading-none text-[#8de0aa] transition hover:bg-[#25D366]/15"
             >
-              <MessageCircle size={15} /> Consultar sin compromiso <ArrowRight size={14} />
+              <MessageCircle size={15} className="shrink-0 block align-middle" />
+              <span className="leading-none">Consultar sin compromiso</span>
+              <ArrowRight size={14} className="shrink-0 block align-middle" />
             </ContactLink>
           </div>
         </div>
@@ -728,11 +742,11 @@ function App() {
               id="cta-final-whatsapp"
               location="final"
               message={siteData.defaultHeroMessage}
-              className="inline-flex min-h-[54px] items-center justify-center gap-3 rounded-full bg-[#25D366] px-8 text-sm font-bold uppercase tracking-wider text-[#102017] shadow-[0_8px_30px_rgba(37,211,102,.25)] transition hover:bg-[#1EBE5D]"
+              className="inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full bg-[#25D366] text-sm font-semibold uppercase tracking-wider leading-none text-[#102017] shadow-[0_8px_30px_rgba(37,211,102,.25)] transition hover:bg-[#1EBE5D]"
             >
-              <MessageCircle size={18} />
-              HABLAR CON ALICIA AHORA · LECTURA GRATIS
-              <ArrowRight size={16} />
+              <MessageCircle size={18} className="shrink-0 block align-middle" />
+              <span className="leading-none">HABLAR CON ALICIA AHORA · LECTURA GRATIS</span>
+              <ArrowRight size={16} className="shrink-0 block align-middle" />
             </ContactLink>
           </div>
 
@@ -831,10 +845,10 @@ function App() {
         id="cta-floating-whatsapp"
         location="floating-desktop"
         message={siteData.defaultHeroMessage}
-        className="fixed bottom-7 right-7 z-40 hidden h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-[#102017] shadow-[0_8px_30px_rgba(20,92,55,.4)] transition hover:scale-105 hover:bg-[#1EBE5D] md:flex"
+        className="fixed bottom-7 right-7 z-40 hidden h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-[#102017] shadow-[0_8px_30px_rgba(20,92,55,.4)] transition hover:scale-105 hover:bg-[#1EBE5D] md:flex p-0 leading-none"
         ariaLabel="Escribime por WhatsApp"
       >
-        <MessageCircle size={24} />
+        <MessageCircle size={26} className="shrink-0 block align-middle m-auto" />
       </ContactLink>
 
       <div className="fixed inset-x-0 bottom-0 z-50 border-t border-white/10 bg-[#120821]/95 p-3 backdrop-blur-md md:hidden">
@@ -842,9 +856,10 @@ function App() {
           id="cta-sticky-mobile-whatsapp"
           location="sticky-mobile"
           message={siteData.defaultHeroMessage}
-          className="flex min-h-[48px] items-center justify-center gap-2 rounded-full bg-[#25D366] text-xs font-bold uppercase tracking-wider text-[#102017] transition hover:bg-[#1EBE5D] shadow-lg"
+          className="inline-flex w-full items-center justify-center gap-2.5 px-6 py-3.5 rounded-full bg-[#25D366] text-xs font-semibold uppercase tracking-wider leading-none text-[#102017] transition hover:bg-[#1EBE5D] shadow-lg"
         >
-          <MessageCircle size={18} /> QUIERO MI LECTURA DE TAROT GRATIS
+          <MessageCircle size={18} className="shrink-0 block align-middle" />
+          <span className="leading-none">QUIERO MI LECTURA DE TAROT GRATIS</span>
         </ContactLink>
       </div>
 
