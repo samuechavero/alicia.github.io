@@ -1,0 +1,110 @@
+Actúa como un desarrollador frontend senior y especialista en CRO (Conversion Rate Optimization) para embudos de tráfico pago (Google Ads y Meta Ads). Construye una Landing Page de altísima conversión, 100% responsive y diseñada con enfoque **Mobile-First**, para la tarotista **Alicia Rosales**.
+
+### 1. IDENTIDAD DE MARCA Y DATOS DE CONTACTO
+- **Nombre:** Alicia Rosales
+- **Título / Especialidad:** Tarotista Experta en Magia Blanca y Roja | Reconciliaciones y Uniones de Pareja
+- **Ubicación / Raíces:** Provincia de Córdoba, Argentina (con raíces en Santiago del Estero). Mencionar su calidez, trato humano cercano y discreción absoluta.
+- **Usuario de redes:** @aliciarosalestarot
+- **Oferta Principal (Gancho):** Primera lectura de tarot y orientación inicial 100% GRATIS por WhatsApp.
+- **WhatsApp oficial:** +54 9 3515 99-3023
+- **Formato de enlace WhatsApp:** `https://wa.me/5493515993023?text=[MENSAJE_CODIFICADO]`
+- **Tono de voz:** Español argentino natural (voseo cercano, empático, cálido y seguro: "Escribime", "Descubrí", "Recuperá tu paz", "Despejá tus dudas"). Sin sonar agresivo ni falso; transmitir contención, misterio elegante y autoridad espiritual.
+
+### 2. SISTEMA VISUAL Y PSICOLOGÍA DEL COLOR (PALETA LILA Y VIOLETA)
+La mayoría del tráfico llegará de noche desde celulares buscando alivio emocional. Diseña una estética mística, sofisticada, íntima y de alto contraste:
+- **Fondos:** Degradados oscuros en violeta profundo / amatista nocturno (`#120821`, `#1D0E36`, `#2A144D`) combinados con tarjetas translúcidas (*glassmorphism*) con bordes sutiles en lila (`rgba(200, 162, 255, 0.25)`).
+- **Acentos místicos:** Lila suave (`#C8A2FF`, `#E6D4FF`), violeta vibrante (`#7C3AED`, `#9333EA`) y detalles mínimos en dorado champán (`#E5C158`) para íconos, estrellas, fases lunares y divisores elegantes.
+- **Efecto de Aislamiento (Von Restorff) para CTAs:** Reserva el color **Verde WhatsApp (`#25D366` con hover `#1EBE5D` y un sutil glow animado)** EXCLUSIVAMENTE para los botones de contacto por WhatsApp. El ojo del usuario debe ir directo al botón en cada pantalla.
+- **Tipografía (Google Fonts):**
+  - Títulos: `Cinzel` o `Playfair Display` (elegancia mística y autoridad).
+  - Cuerpo y botones: `Plus Jakarta Sans` o `DM Sans` (máxima legibilidad en pantallas móviles).
+- **Atmósfera:** Incluye un fondo sutil animado con partículas brillantes / polvo de estrellas muy tenue (CSS/Canvas liviano que no afecte el rendimiento de carga) y geometría sagrada o fases lunares en SVG.
+
+### 3. ARQUITECTURA DE SECCIONES (BASADA EN PNL, ACOMPASAMIENTO Y CONVERSIÓN)
+
+Construye la página en una sola vista vertical (*single-page funnel*) sin menú de navegación complejo que distraiga o saque al usuario del embudo:
+
+#### A. Barra Superior de Confianza y Presencia (Top Bar)
+- Barra delgada fija o superior con un punto verde parpadeante: **"Alicia Rosales está en línea ahora • Atención 100% confidencial"**.
+
+#### B. Hero Section (Above the Fold - Optimizado para Móvil)
+- **Badge superior:** `🔮 Magia Blanca y Roja • Córdoba, Argentina`
+- **Titular (H1 - PNL / Presuposición y Alivio):** "¿Sentís que se alejó sin explicación? Despejá tus dudas hoy con tu **Lectura de Tarot Gratis**"
+- **Subtítulo (Acompasamiento emocional):** "No tenés que atravesar esta incertidumbre en soledad. A través del Tarot, la Magia Blanca y la Magia Roja te ayudo a ver qué siente realmente, destrabar bloqueos y guiar el camino hacia la reconciliación."
+- **Elemento visual:** Espacio circular/arqueado elegante con halo lila/dorado preparado para el retrato de Alicia Rosales (usa una imagen mística placeholder elegante y deja un comentario claro en el código `// REEMPLAZAR CON FOTO DE ALICIA` para cambiarla fácilmente).
+- **CTA Principal (Botón grande con pulso suave e ícono de WhatsApp):**
+  - Texto: **"QUIERO MI LECTURA GRATIS AHORA"**
+  - Micro-copy debajo del botón: *"Respuesta rápida por WhatsApp • Sin compromiso • Privacidad absoluta"*
+  - Enlace con mensaje prellenado: `"Hola Alicia, vi tu página y quiero pedir mi lectura de tarot gratis para despejar mis dudas."`
+
+#### C. Módulo Interactivo de Micro-Compromiso (Efecto Zeigarnik - CLAVE PARA CONVERSIÓN)
+Crea una sección interactiva llamada **"Elegí 3 cartas para iniciar tu consulta gratuita"**:
+- Muestra un abanico o grilla de 6 cartas de tarot boca abajo con diseño de dorso en violeta, lila y dorado (creado con CSS/SVG).
+- **Instrucción:** *"Pensá en esa persona o situación que te quita el sueño, respirá profundo y tocá 3 cartas."*
+- **Interacción:**
+  - Al tocar cada carta, realiza una animación suave de volteo (*3D flip*) revelando un arquetipo visual y significado breve (ej. *Los Enamorados*, *La Luna*, *La Estrella*, *La Fuerza*, *La Rueda de la Fortuna*, *El Sol*).
+  - Muestra un contador: `Cartas elegidas: X / 3`.
+  - Al completar las 3 cartas, aparece una caja destacada con una lectura preliminar empática (*Pacing & Leading*) que genera un bucle abierto: **"Tus cartas muestran una energía activa con bloqueos que se pueden trabajar hoy mismo. Para darte la interpretación completa y personalizada sobre tu caso, escribime ahora."**
+  - **Botón WhatsApp dinámico:** Incluye automáticamente en el mensaje prellenado las 3 cartas que eligió el usuario. Ejemplo: `"Hola Alicia, elegí mis 3 cartas en tu web (Los Enamorados, La Luna, La Estrella) y quiero mi lectura gratuita."`
+  - Botón secundario para reiniciar la tirada.
+
+#### D. Sección de Espejo Emocional (Identificación del Dolor)
+- Título: **"¿Te sentís identificado con alguna de estas situaciones?"**
+- Lista visual con íconos en lila/dorado (tarjetas limpias) reflejando los dolores exactos del cliente:
+  1. Tu pareja se volvió fría, distante o se fue de un día para el otro.
+  2. Presentís la influencia de terceras personas, envidias o energías negativas en tu relación.
+  3. Las discusiones constantes desgastaron el vínculo, pero sabés que todavía hay amor.
+  4. Necesitás claridad urgente para saber si esperar, actuar o soltar.
+- Cierre con frase puente: *"Cada historia es única. Escribime por privado y miremos juntos qué dicen las cartas sobre tu situación."* + Botón CTA a WhatsApp.
+
+#### E. Sección de Servicios (Magia Blanca y Roja)
+Grilla responsive (1 columna en móvil, 2 o 3 en desktop) con tarjetas *glassmorphism* violeta/lila. Cada tarjeta tiene ícono místico, descripción clara orientada al beneficio emocional y su propio botón de WhatsApp con mensaje personalizado:
+1. **Lectura de Tarot del Amor (Primera consulta gratis):** Claridad sobre sentimientos ocultos, intenciones y futuro de la relación. *(Mensaje WA: "Hola Alicia, quiero mi lectura de tarot del amor gratis.")*
+2. **Reconciliaciones y Retorno de Pareja:** Trabajos personalizados orientados a sanar heridas, disolver el orgullo y abrir caminos para el reencuentro. *(Mensaje WA: "Hola Alicia, necesito orientación para una reconciliación de pareja.")*
+3. **Uniones de Pareja (Magia Blanca y Roja):** Rituales enfocados en fortalecer el deseo, la pasión, el compromiso y la armonía del vínculo. *(Mensaje WA: "Hola Alicia, quiero consultar por una unión de pareja con Magia Blanca y Roja.")*
+4. **Alejamiento de Terceros y Envidias:** Corte de influencias externas, chismes o personas que interfieren en tu relación. *(Mensaje WA: "Hola Alicia, quiero consultar por alejamiento de terceros y protección.")*
+5. **Limpieza Energética y Destrabe:** Eliminación de cargas negativas, estancamiento emocional y bloqueo en los caminos. *(Mensaje WA: "Hola Alicia, me interesa hacer una limpieza energética y destrabe.")*
+
+#### F. Sobre Alicia Rosales (Autoridad, Cercanía y Confianza)
+- Diseño en dos columnas (foto/visual + texto).
+- Historia cercana y humana: Nacida en Santiago del Estero y radicada en la Provincia de Córdoba, Alicia combina su don intuitivo con años de práctica en Tarot, Magia Blanca y Magia Roja. Destacar los 3 pilares: **Trato directo (hablás con ella, no con bots)**, **Cero juicios** y **Confidencialidad total**.
+- 3 métricas/badges de confianza visuales: `Confidencialidad 100%` | `Atención Directa` | `Sin Juzgamientos`.
+
+#### G. Prueba Social (Testimonios Estilo Mensajes de WhatsApp)
+- Título: **"Personas que despejaron sus dudas y recuperaron su tranquilidad"**
+- Diseña 4 tarjetas que simulen visualmente capturas limpias de mensajes de agradecimiento (con estilo sutil oscuro/violeta o burbuja de chat elegante, nombre + inicial y ciudad argentina: Córdoba, Buenos Aires, Rosario, Mendoza, Tucumán) con 5 estrellas doradas.
+- Testimonios realistas, cálidos y creíbles (evitando exageraciones artificiales). Ejemplo: *"Alicia me escuchó sin juzgarme cuando peor estaba. En la lectura gratis me dijo cosas que nadie sabía. Hoy pudimos volver a hablar con mi pareja y recuperar la paz. Gracias infinitas."*
+
+#### H. Preguntas Frecuentes (Acordeón para Eliminar Objeciones)
+Acordeón desplegable limpio respondiendo las 5 objeciones principales:
+1. ¿La lectura de tarot inicial es realmente gratis? (Explicar claramente que la lectura inicial de orientación por WhatsApp es gratuita para conocer tu caso y ver si puede ayudarte).
+2. ¿Todo lo que hablemos es confidencial?
+3. ¿Trabajás a distancia o solo en Córdoba? (Atención a toda Argentina y el exterior 100% online por WhatsApp).
+4. ¿Cuál es la diferencia entre Magia Blanca y Magia Roja? (Explicación breve, tranquila y positiva: la Magia Blanca armoniza, limpia y protege; la Magia Roja trabaja el amor, la atracción y la pasión).
+5. ¿Cómo empiezo ahora mismo?
+
+#### I. Cierre de Alta Conversión (Final CTA Banner)
+- Tarjeta destacada con borde brillante lila y dorado.
+- Título: **"No te quedes con la duda una noche más"**
+- Texto: **"Escribime por mensaje privado y despejo tus dudas hoy mismo."**
+- Botón gigante verde WhatsApp: **"HABLAR CON ALICIA POR WHATSAPP"**
+
+#### J. Footer Legal y Blindaje para Google Ads / Meta Ads (MUY IMPORTANTE)
+- Nombre: Alicia Rosales Tarot (`@aliciarosalestarot`) • Córdoba, Argentina.
+- Enlaces que abren modales limpios (sin sacar al usuario de la página): **Política de Privacidad**, **Términos y Condiciones**, **Aviso Legal**.
+- **Disclaimer visible en texto pequeño pero legible:** *"Sitio exclusivo para mayores de 18 años. Los servicios de tarot, orientación espiritual y rituales de magia blanca y roja tienen fines de acompañamiento espiritual y entretenimiento. De acuerdo con las legislaciones vigentes, los resultados pueden variar de persona a persona según cada caso particular y no sustituyen asesoramiento médico, psicológico ni legal. Al enviar un mensaje, el usuario acepta nuestra política de privacidad."*
+- **Importante en todo el copy:** NO usar frases prohibidas por políticas de anuncios como "resultados 100% garantizados", "en 24 horas garantizado" o "infalible". Usa lenguaje persuasivo pero seguro para campañas publicitarias ("atención personalizada", "enfoque profundo", "orientación clara").
+
+### 4. ELEMENTOS PERSISTENTES Y TRACKING DE MARKETING
+1. **Botón Flotante de WhatsApp (esquina inferior derecha en desktop) y Barra Inferior Fija (Sticky Bottom Bar en móvil):**
+   - En móvil, fija una barra discreta al fondo de la pantalla con el estado en línea y un botón rápido **"Lectura Gratis por WhatsApp"** para que siempre esté al alcance del pulgar.
+2. **Preparado para Tracking (Google Ads / Meta Pixel / GTM):**
+   - Crea una función helper centralizada `handleWhatsAppClick(location, customMessage)` que:
+     - Agregue atributos `id` únicos y `data-cta-location` (ej. `hero`, `tarot-interactivo`, `servicio-reconciliacion`, `sticky-bar`, `footer`) a todos los enlaces de WhatsApp.
+     - Dispare un evento opcional a `window.dataLayer` (si existe GTM) y `window.fbq` (si existe Meta Pixel, evento `Contact`) antes de abrir WhatsApp en una nueva pestaña (`target="_blank" rel="noopener noreferrer"`).
+   - Esto permitirá medir conversiones reales de campañas desde el día 1.
+
+### 5. STACK TÉCNICO Y REQUISITOS DE CALIDAD
+- Usa **React + Vite + Tailwind CSS + Lucide React + Framer Motion**.
+- Código modular, limpio y fácil de editar (separa los datos de servicios, cartas del tarot, testimonios y el número de teléfono en un archivo `src/config/siteData.ts` para poder cambiar textos o el número de WhatsApp desde un solo lugar).
+- Velocidad de carga instantánea, animaciones fluidas sin lag en celulares de gama media y SEO básico (meta tags, Open Graph con título y descripción persuasivos para compartir el link).

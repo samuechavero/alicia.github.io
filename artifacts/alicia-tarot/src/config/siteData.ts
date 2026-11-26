@@ -1,0 +1,72 @@
+export const siteData = {
+  phone: '5493515993023',
+  socialHandle: '@aliciarosalestarot',
+  socialUrl: 'https://www.instagram.com/aliciarosalestarot/',
+  name: 'Alicia Rosales',
+  home: 'Santiago del Estero',
+  based: 'Córdoba, Argentina',
+  specialty: 'Tarotista experta en Magia Blanca y Roja',
+  services: [
+    {
+      id: 'lectura-amor',
+      title: 'Lectura de Tarot del Amor',
+      label: 'Primera lectura gratis',
+      description: 'Una lectura simbólica para explorar lo que estás viviendo en tu relación, ordenar tus preguntas y mirar posibles caminos con más claridad.',
+      detail: 'La orientación inicial es gratuita y sin compromiso.',
+      message: 'Hola Alicia, quiero mi lectura de tarot del amor gratis.',
+    },
+    {
+      id: 'reconciliacion',
+      title: 'Reconciliaciones y retorno de pareja',
+      label: 'Orientación personal',
+      description: 'Un espacio para reflexionar sobre el vínculo, las conversaciones pendientes y qué necesitás vos, respetando las decisiones de cada persona.',
+      detail: 'Sin promesas sobre lo que hará otra persona.',
+      message: 'Hola Alicia, necesito orientación para una reconciliación de pareja.',
+    },
+    {
+      id: 'union-pareja',
+      title: 'Uniones de pareja',
+      label: 'Magia Blanca y Roja',
+      description: 'Consultas sobre prácticas espirituales relacionadas con el amor, la conexión y la armonía, conversadas con expectativas claras.',
+      detail: 'Cada experiencia es personal; no hay resultados garantizados.',
+      message: 'Hola Alicia, quiero consultar por una unión de pareja con Magia Blanca y Roja.',
+    },
+    {
+      id: 'proteccion',
+      title: 'Terceros, envidias y protección',
+      label: 'Acompañamiento',
+      description: 'Una lectura para hablar de lo que te preocupa y enfocarte en tus límites, tu bienestar y las decisiones que sí están en tus manos.',
+      detail: 'No asegura cambios en la conducta de terceros.',
+      message: 'Hola Alicia, quiero consultar por alejamiento de terceros y protección.',
+    },
+    {
+      id: 'limpieza',
+      title: 'Limpieza energética y destrabe',
+      label: 'Consulta a medida',
+      description: 'Un espacio de orientación espiritual para poner en palabras sensaciones de estancamiento y explorar prácticas simbólicas de cuidado personal.',
+      detail: 'El primer intercambio por WhatsApp es sin costo.',
+      message: 'Hola Alicia, me interesa hacer una limpieza energética y destrabe.',
+    },
+  ],
+  cards: [
+    { name: 'Los Enamorados', icon: '♡', theme: 'Elecciones y vínculos', text: 'Una invitación a pensar qué valores querés cuidar en tus relaciones y qué elección se siente coherente con vos.' },
+    { name: 'La Luna', icon: '☾', theme: 'Lo que todavía no ves', text: 'Quizás sea un buen momento para hacer una pausa, distinguir intuiciones de temores y buscar más claridad.' },
+    { name: 'La Estrella', icon: '✧', theme: 'Esperanza serena', text: 'Un recordatorio de que podés avanzar de a poco, sin exigirte tener todas las respuestas ahora.' },
+    { name: 'La Fuerza', icon: '♧', theme: 'Cuidado y valentía', text: 'La fortaleza también puede ser tratarte con paciencia y sostener tus límites con amabilidad.' },
+    { name: 'La Rueda de la Fortuna', icon: '◌', theme: 'Cambios y ciclos', text: 'Los momentos cambian. Podés observar qué está en tus manos y qué conviene aceptar por ahora.' },
+    { name: 'El Sol', icon: '☼', theme: 'Presencia luminosa', text: 'Reconocé aquello que hoy sí está disponible, sin exigirte tener todo resuelto.' },
+  ],
+  faqs: [
+    { q: '¿La primera lectura es realmente gratis?', a: 'Sí. La primera lectura de tarot y orientación inicial por WhatsApp no tiene costo. Si más adelante te interesa otro servicio, conversamos sus condiciones antes y vos decidís sin compromiso.' },
+    { q: '¿Cómo se cuida mi privacidad?', a: 'La consulta se atiende de forma directa y discreta. Compartí solo lo que quieras; WhatsApp tiene sus propias condiciones y políticas de privacidad, que también aplican a los mensajes.' },
+    { q: '¿Atendés solo en Córdoba?', a: 'No. La atención es online por WhatsApp, para personas de toda Argentina y del exterior.' },
+    { q: '¿Cuál es la diferencia entre Magia Blanca y Magia Roja?', a: 'En estas prácticas, la Magia Blanca se asocia con armonía, limpieza y protección; la Magia Roja, con temas de amor, atracción y pasión. Se ofrecen como orientación espiritual, sin garantizar resultados ni influir en la voluntad de otra persona.' },
+    { q: '¿Cómo empiezo?', a: 'Escribime por WhatsApp con tu consulta. Hablamos de la lectura inicial gratuita, resolvemos tus dudas y vos elegís si querés continuar.' },
+  ],
+};
+
+export const legalCopy = {
+  privacy: { title: 'Política de privacidad', body: 'La información que compartas por WhatsApp se utilizará para responder tu consulta. Compartí solo lo que quieras y evitá enviar datos sensibles. El contenido personal no se publicará como testimonio sin tu autorización. WhatsApp aplica sus propias condiciones y políticas de privacidad a los mensajes.' },
+  terms: { title: 'Términos y condiciones', body: 'Las lecturas y prácticas espirituales se ofrecen como orientación personal, reflexión y entretenimiento para personas mayores de 18 años. No garantizan resultados ni sustituyen tus decisiones. La primera lectura y orientación inicial por WhatsApp son gratuitas; cualquier servicio adicional se conversa antes y queda a tu elección.' },
+  legal: { title: 'Aviso legal', body: 'Los servicios de tarot, orientación espiritual y rituales de Magia Blanca y Roja tienen fines de acompañamiento espiritual y entretenimiento. Los resultados pueden variar y no sustituyen asesoramiento médico, psicológico ni legal. No se prometen diagnósticos ni cambios en las decisiones de terceras personas. Sitio exclusivo para mayores de 18 años.' },
+};
