@@ -2,18 +2,22 @@
   "name": "workspace",
   "version": "0.0.0",
   "license": "MIT",
+  "homepage": "https://samuechavero.github.io/alicia.github.io/",
   "scripts": {
     "preinstall": "sh -c 'rm -f package-lock.json yarn.lock; case \"$npm_config_user_agent\" in pnpm/*) ;; *) echo \"Use pnpm instead\" >&2; exit 1 ;; esac'",
     "dev": "pnpm --filter @workspace/alicia-tarot run dev",
-    "build": "pnpm --filter @workspace/alicia-tarot run typecheck && pnpm --filter @workspace/alicia-tarot run build",
+    "build": "pnpm --filter @workspace/alicia-tarot run build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "typecheck:libs": "tsc --build",
-    "typecheck": "pnpm --filter @workspace/alicia-tarot run typecheck"
+    "typecheck": "pnpm run typecheck:libs && pnpm -r --filter \"./artifacts/**\" --filter \"./scripts\" --if-present run typecheck"
   },
   "private": true,
   "dependencies": {
     "@replit/connectors-sdk": "^0.7.0"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "prettier": "^3.9.10",
     "typescript": "~5.9.3"
   }

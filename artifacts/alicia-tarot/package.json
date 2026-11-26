@@ -1,6 +1,7 @@
 {
   "name": "@workspace/alicia-tarot",
   "version": "0.0.0",
+  "homepage": "https://samuechavero.github.io/alicia.github.io/",
   "private": true,
   "type": "module",
   "scripts": {
