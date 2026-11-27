@@ -47,54 +47,55 @@ export const siteData = {
   ],
 
   situations: [
-    'Tu pareja se volvió distante o te bloqueó sin explicaciones claras.',
-    'Te preocupa que haya una tercera persona en la relación.',
-    'Intentaste conversar y no encontraste una salida que te cierre.',
-    'Hay discusiones o tensiones que te gustaría poder ordenar.',
+    'Ya se separaron, te dejó de hablar o te bloqueó, y sentís que todavía queda amor por recuperar.',
+    'Te preocupa que haya una tercera persona o amante interfiriendo en la relación.',
+    'Intentaste conversar y no encontrás una salida, con discusiones constantes o frialdad.',
+    'Sentís que esa persona se aleja día a día y necesitás una solución definitiva.',
   ],
 
   services: [
     {
       id: 'lectura-gratis',
       title: 'Lectura de Tarot Gratis',
-      badge: 'Sin costo',
-      description: 'Una primera lectura sin costo para explorar tus preguntas sobre el vínculo y pensar qué necesitás. Sin compromiso.',
-      detail: 'La orientación inicial es gratuita y sin compromiso.',
-      message: 'Hola Alicia, vi tu página y quisiera consultar por una lectura de tarot gratuita.',
+      badge: 'SIN COSTO',
+      description: 'Despejá tus dudas hoy mismo. Analizamos a fondo qué siente esa persona por vos, qué está frenando el vínculo y cuál es el camino exacto para resolver tu caso.',
+      detail: 'Primera lectura 100% gratuita y confidencial.',
+      message: 'Hola Alicia, vi tu página y quiero mi lectura de tarot 100% gratis para consultar por mi caso.',
     },
     {
       id: 'reconciliacion',
       title: 'Reconciliaciones y Retorno de Pareja',
-      description: 'Conversamos sobre distancia, comunicación y tus expectativas. Las cartas no pueden garantizar que una relación se retome.',
-      detail: 'Orientación para reflexionar y cuidar tu camino.',
+      description: 'Pensado tanto si ya están separados como si la relación está al límite. Trabajamos para cortar el orgullo, reabrir la comunicación y lograr que esa persona vuelva a buscarte.',
+      detail: 'Soluciones reales para recuperar tu relación.',
       message: 'Hola Alicia, vi tu página y quisiera consultar por reconciliaciones y retorno de pareja.',
     },
     {
       id: 'amarres',
       title: 'Amarres y Uniones de Amor (Magia Roja)',
-      description: 'Consulta sobre prácticas tradicionales asociadas al amor. Hablamos con claridad sobre límites, autonomía y expectativas, sin prometer resultados.',
-      detail: 'Prácticas conversadas con cuidado y sin falsas promesas.',
+      badge: 'Magia Roja',
+      description: 'Rituales fuertes y personalizados de Magia Roja para afianzar el lazo afectivo, encender nuevamente el deseo, la pasión y el compromiso emocional en la pareja.',
+      detail: 'Trabajos de Magia Roja con seguimiento real.',
       message: 'Hola Alicia, vi tu página y quisiera consultar por amarres y uniones de amor.',
     },
     {
       id: 'alejamiento-terceros',
       title: 'Alejamiento de Terceros y Amantes',
-      description: 'Un espacio para hablar de tus preocupaciones y de cómo cuidar tus límites. No puedo confirmar interferencias ni controlar las decisiones de otras personas.',
-      detail: 'Enfoque en tu resguardo, tus límites y bienestar.',
+      description: 'Cortes energéticos precisos para sacar del medio a terceras personas, amantes o influencias externas que están interfiriendo y dañando tu relación.',
+      detail: 'Cortá de raíz las interferencias externas.',
       message: 'Hola Alicia, vi tu página y quisiera consultar por alejamiento de terceros y amantes.',
     },
     {
       id: 'endulzamientos',
       title: 'Endulzamientos y Armonización',
-      description: 'Consulta sobre prácticas de Magia Blanca y armonización. Cada paso es voluntario y no hay resultados garantizados.',
-      detail: 'Armonía y equilibrio energético.',
+      description: 'Magia Blanca dirigida a suavizar el carácter, terminar con los celos, la frialdad y las peleas constantes, devolviendo la dulzura y la estabilidad a la pareja.',
+      detail: 'Armonía, calma y unión duradera.',
       message: 'Hola Alicia, vi tu página y quisiera consultar por endulzamientos y armonización.',
     },
     {
       id: 'limpiezas',
       title: 'Limpiezas Energéticas y Cortes de Envidia',
-      description: 'Una conversación sobre prácticas espirituales y bienestar personal, sin presentarlas como sustituto de ayuda profesional.',
-      detail: 'Renovación y protección de tu energía.',
+      description: 'Eliminación profunda de cargas negativas, mal de ojo, bloqueos o trabajos ajenos que están trabando tu vida sentimental y tu paz diaria.',
+      detail: 'Limpieza completa y protección espiritual.',
       message: 'Hola Alicia, vi tu página y quisiera consultar por limpiezas energéticas y cortes de envidia.',
     },
   ],
@@ -102,41 +103,41 @@ export const siteData = {
   steps: [
     {
       number: '01',
-      title: 'Me escribís',
-      description: 'Contame brevemente qué te preocupa, solo lo que quieras compartir.',
+      title: 'Me escribís por WhatsApp',
+      description: 'Contame tu situación con total reserva. Estoy para escucharte y ayudarte.',
     },
     {
       number: '02',
       title: 'Recibís tu lectura gratis',
-      description: 'Exploramos las cartas como una herramienta simbólica para conversar sobre tu pregunta.',
+      description: 'Consultamos las cartas para ver qué siente esa persona y qué está pasando realmente.',
     },
     {
       number: '03',
-      title: 'Decidís tu próximo paso',
-      description: 'Te explico con sinceridad qué opciones hay y vos decidís si querés continuar.',
+      title: 'Elegís el camino de solución',
+      description: 'Te indico las opciones más efectivas de Magia Blanca o Roja para resolver tu caso.',
     },
   ],
 
   faqs: [
     {
       q: '¿La lectura realmente es gratuita?',
-      a: 'Sí. La primera lectura de tarot y orientación por WhatsApp es 100% gratuita y sin ningún compromiso. Podés consultarme sobre tu situación sentimental y ver cómo trabajo.',
+      a: 'Sí, tu primera lectura de tarot y orientación por WhatsApp es 100% gratuita y sin compromiso. Analizamos tu situación sentimental para darte respuestas claras desde el primer contacto.',
     },
     {
       q: '¿Cómo es una lectura online?',
-      a: 'La lectura se realiza directamente por WhatsApp mediante mensajes o audios personalizados. No necesitás instalar nada extra; conversamos de forma directa, privada y a tu propio ritmo.',
+      a: 'La lectura se realiza directamente por WhatsApp de forma privada y personalizada mediante mensajes o audios. Es rápida, cercana y cómoda, estés donde estés.',
     },
     {
       q: '¿Lo que comparta queda en privado?',
-      a: 'Absolutamente. Todas las consultas son estrictamente confidenciales y personales. Tu historia y tus datos quedan entre vos y yo con total discreción y respeto.',
+      a: 'Totalmente. La discreción y confidencialidad son absolutas. Todo lo que conversamos queda estrictamente entre vos y yo con el mayor respeto.',
     },
     {
       q: '¿Qué diferencia hay entre Magia Blanca y Magia Roja?',
-      a: 'La Magia Blanca se orienta a la armonía, paz, protección y corte de energías densas o envidias. La Magia Roja se enfoca en cuestiones afectivas, de pareja, pasión y vínculos amorosos. Ambas se abordan con honestidad y sin promesas irreales.',
+      a: 'La Magia Blanca se enfoca en endulzamientos, armonización, paz y cortes de envidias o malas energías. La Magia Roja está dedicada exclusivamente al amor apasionado, uniones fuertes, retorno de parejas y reconexión del deseo.',
     },
     {
-      q: '¿El tarot predice exactamente lo que va a pasar?',
-      a: 'El tarot es una guía y espejo simbólico de energías y emociones presentes; no define el destino de forma inmutable ni anula la voluntad ajena. Te brinda claridad para que tomes tus propias decisiones.',
+      q: '¿El tarot me ayuda a saber qué siente esa persona?',
+      a: 'Sí, el tarot revela las intenciones reales, sentimientos y bloqueos de esa persona, permitiéndote saber exactamente dónde estás parada/o y qué pasos dar para recuperarla.',
     },
     {
       q: '¿Puedo consultar desde otro país?',
@@ -144,7 +145,7 @@ export const siteData = {
     },
     {
       q: '¿Qué necesito para empezar?',
-      a: 'Solo escribirme por WhatsApp contándome brevemente tu consulta o lo que sientas compartir. No necesitás tener todo claro ni experiencia previa.',
+      a: 'Solo escribirme un mensaje por WhatsApp contándome brevemente qué te está pasando. Empezamos de inmediato con tu lectura sin costo.',
     },
   ],
 };
